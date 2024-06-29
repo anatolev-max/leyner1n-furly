@@ -1,43 +1,22 @@
-/* body {
-    
+body {
     display: flex;
     flex-direction: column;
+    background-color: rgb(243, 241, 236);
     font-family: "Manrope", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
-    margin: 0;
+    min-height: 100vh;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 55.5px;
-    margin-left: 55.5px;
-}
-
-.item {
-    margin-top: 7px;
-    margin-right: 50px;
-}
-
-.navigation {
-    display: flex;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 130%;
-}
-
-.client-part {
-    display: flex;
-}
-
-.info-list {
-    display: flex;
-    height: 244px;
-    z-index: -1;
-    background-color: rgb(223, 212, 212);
-}
-
-.background {
-    display: flex;
+/* * {
+    border: 1px solid;
 } */
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.product-container{
+    width: 270px;
+}

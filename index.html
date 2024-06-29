@@ -2,97 +2,228 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"> -->
     <title>Furly | Главная</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout/main-header.css">
+    <link rel="stylesheet" href="./css/pages/index/product.css">
+    <link rel="stylesheet" href="./css/layout/main-footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="main-header ">
-        <nav>
-            <a href="#"> 
-                <img src="./img/logo.svg" width="90" height="36" alt="">
-            </a>
-            <ul class="main-nav-list">
-                <li><a href="#">Новинки</a></li>
-                <li><a href="#">Бестеллеры</a></li>
-                <li><a href="#">Одежда</a></li>
-                <li><a href="#">Обувь</a></li>
-                <li><a href="#">Аксессуары</a></li>
-            </ul>
-            <ul class="client-nav-list">
-                <li>
-                    <a href="#">
-                        <img src="./img/login.svg" width="26" height="26" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/like.svg" width="26" height="26" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/basket.svg" width="26" height="26" alt="">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <header class="main-header">
+        <div class="container">
+            <nav>
+                <a href="#"> 
+                    <img src="./img/logo.svg" width="90" height="36" alt="">
+                </a>
+                <ul class="header-nav-list">
+                    <li><a href="#">Новинки</a></li>
+                    <li><a href="#">Бестеллеры</a></li>
+                    <li><a href="#">Одежда</a></li>
+                    <li><a href="#">Обувь</a></li>
+                    <li><a href="#">Аксессуары</a></li>
+                </ul>
+                <ul class="client-nav-list">
+                    <li>
+                        <a href="#">
+                            <img src="./img/icons/login.svg" width="26" height="26" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icons/like.svg" width="26" height="26" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icons/basket.svg" width="26" height="26" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>    
     </header>
 
-    <main></main>
+    <main>
+        <section class="catalog">
+            <div class="container">
+                <h1>Женская одежда</h1>
+                <search>
+                    <ul class="filter-list">
+                        <li class="filter-list-item">
+                            <label for="category">Категория</label>
+                            <select id="category">
+                                <option value="">Все</option>
+                            </select>
+                        </li>
+                        <li class="filter-list-item">
+                            <label for="brand">Бренд</label>
+                            <select id="brand">
+                                <option value="">Все</option>
+                            </select>
+                        </li>
+                        <li class="filter-list-item">
+                            <label for="collection">Коллекция</label>
+                            <select id="collection">
+                                <option value="">Все</option>
+                            </select>
+                        </li>
+                        <li class="filter-list-item">
+                            <label for="sort">Сортировать по:</label>
+                            <select id="sort">
+                                <option value="">Все</option>
+                            </select>
+                        </li>
+                    </ul>
+                </search>
+                
+                <div class="product-container">
+                    <ul class="product-list">
+                        <li class="product-list-item">
+                            <a href="#">
+                                <img src="./img/products/black.jpg" width="270" height="370" alt="">
+                            </a>
+                            <div class="product-info">
+                                <h3 class="product-title">
+                                    <a href="#">Платье-комбинация Black</a>
+                                </h3>
+                                <a class="favorite-btn" href="#">
+                                    <img src="./img/icons/like.svg" width="26" height="26" alt="">
+                                </a>
+                            </div>
+                            <a href="#">
+                                <strong class="product-price">4 500 &#8381;</strong>
+                            </a>
+                        </li>
+                        <li class="product-list-item">
+                            <a href="#">
+                                <img src="./img/products/c-beige.jpg"  width="270" height="370" alt="">
+                            </a>
+                            <div class="product-info">
+                                <h3 class="product-title">
+                                    <a href="#">Костюм Beige</a>
+                                </h3>
+                                <a class="favorite-btn" href="#">
+                                    <img src="./img/icons/like.svg" width="26" height="26" alt="">
+                                </a>
+                            </div>
+                            <a href="#">
+                                <strong class="product-price">8 500 &#8381;</strong>
+                            </a>
+                        </li>
+                        <li class="product-list-item">
+                            <a href="#">
+                                <img src="./img/products/duon.jpg"  width="270" height="370" alt="">
+                            </a>
+                            <div class="product-info">
+                                <h3 class="product-title">
+                                    <a href="#">Пиджак Duon</a>
+                                </h3>
+                                <a class="favorite-btn" href="#">
+                                    <img src="./img/icons/like.svg" width="26" height="26" alt="">
+                                </a>
+                            </div>
+                            <a href="#">
+                                <strong class="product-price">7 500 &#8381;</strong>
+                            </a>
+                        </li>
+                        <li class="product-list-item">
+                            <a href="#">
+                                <img src="./img/products/flax.jpg"  width="270" height="370" alt="">
+                            </a>
+                            <div class="product-info">
+                                <h3 class="product-title">
+                                    <a href="#">Пальто Flax</a>
+                                </h3>
+                                <a class="favorite-btn" href="#">
+                                    <img src="./img/icons/like.svg" width="26" height="26" alt="">
+                                </a>
+                            </div>
+                            <a href="#">
+                                <strong class="product-price">13 500 &#8381;</strong>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="next">
+                    <div class="box">
+                        <a class="load-more-btn" href="#">Загрузить еще</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="main-footer">
-       <div class="col">
-            <a href="#">
-                <img src="./img/logo.svg" width="90" height="36" alt="">
-            </a>
-            <p>Furly &copy; 2021 Все права защищены</p>
-            <a href="#">Политика конфиденциальности</a>
-       </div>
+        <div class="container">
+            <div class="col">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/logo.svg" width="90" height="36" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <div>Furly &copy; 2021 Все права защищены</div>
+                    </li>
+                    <li>
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                </ul>
+            </div>
 
-       <div class="col">
-            <a href="tel:+79639211528">+7 (963) 921-15-28</a>
-            <a href="mailto:chugtaaaaai@gmail.com">chugtaaaaai@gmail.com</a>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="./img/facebook.svg">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/twiter.svg" width="18" height="18" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/insta.svg" width="18" height="18" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/pintrest.svg" width="18" height="18" alt="">
-                    </a>
-                </li>
-            </ul>
-       </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        <a href="tel:+79639211528">+7 (963) 921-15-28</a>
+                    </li>
+                    <li>
+                        <a href="mailto:chugtaaaaai@gmail.com">chugtaaaaai@gmail.com</a>
+                    </li>
+                </ul>
+                <ul class="social-media">
+                    <li>
+                        <a href="#">
+                            <img src="./img/icons/facebook.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icons/twiter.svg" width="18" height="18" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icons/insta.svg" width="18" height="18" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icons/pintrest.svg" width="18" height="18" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-       <div class="col">
-            <ul>
-                <li><a href="#">Оплата и доставка</a></li>
-                <li><a href="#">Возврат</a></li>
-                <li><a href="#">Отследить заказ</a></li>
-            </ul>
-       </div>
+            <div class="col">
+                <ul>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Возврат</a></li>
+                    <li><a href="#">Отследить заказ</a></li>
+                </ul>
+            </div>
 
-       <div class="col">
-            <form action="" method="">
-                <label for="email">Подпишитесь на нашу рассылку</label>
-                <input id="email" type="email" placeholder="example@email.com" required>
-                <input type="image" src="./img/arrow.svg" width="26" height="12" alt="">
-            </form>
-       </div>
+            <div class="col">
+                <form action="" method="">
+                    <label for="email">Подпишитесь на нашу рассылку</label>
+                    <input id="email" type="email" placeholder="example@email.com" required>
+                    <input type="image" src="./img/rigth.svg" width="26" height="12" alt="">
+                </form>
+            </div>
+        </div>
     </footer>
 
 </body>
